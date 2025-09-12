@@ -27,10 +27,10 @@ Energyconsumed float)
 -- fetch smart meater readings where energy consumed between 10-50 kw , reading date time between 2024-01-01 and 2024-12-31 , exclude meters installed after 2024-06-30--
 
 insert into smartmeterreadings values 
-(01,101,'rooftop','2024-07-24','2024-08-25 10:30:00',45)
-,(02,102,'basement','2023-07-24','2023-08-25 11:30:00',7)
-,(03,103,'rooftop','2023-08-24','2024-05-25 09:30:00',20)
-,(04,104,'basement','2023-09-24','2025-08-25 05:30:00',52);
+(05,105,'rooftop','2024-07-24','2024-08-25 09:30:00',46)
+,(06,106,'basement','2023-07-24','2023-08-25 04:30:00',70)
+,(07,107,'front wall','2023-08-24','2024-05-25 12:30:00',50)
+,(08,108,'basement','2023-09-24','2025-08-25 07:30:00',54);
 
 -- query to fetch reading where energyreading between 10 and 50--
 
