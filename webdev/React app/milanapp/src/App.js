@@ -1,32 +1,26 @@
+import { useState } from "react";
 
-import './App.css';
-import { useState } from 'react';
+function App() {
 
-function App(props) {
-  const ContainerStyle = {
+  const [counter, setCounter] = useState(0);
 
-  };
-  const [counter, setcounter] = useState(0);
-  const buttonhandler = () => {
-    setcounter(counter + 1)
-  };
-  const buttonhandler2 = () => {
-    setcounter(counter - 1)
-  };
+  const incrementButtonHandler = () => {
+    setCounter(counter + 1)
+    // counter=counter+1 // this does not work as counter is constant
+  }
 
+  const decrementButtonHandler = () => {
+    setCounter(counter - 1)
+    // counter=counter+1 // this does not work as counter is constant
+  }
 
   return (
-    <div className='container'
-      style={ContainerStyle}>
-      <p style={{ fontSize: "200px" }}>  {counter} </p>
-      <div>
-        <button style={{ fontSize: "50px" }} onClick={buttonhandler}> increment </button>
-      </div>
-      <div>
-        <button style={{ fontSize: "50px" }} onClick={buttonhandler2}> decrement </button>
-      </div>
+    <div >
+      <div>{counter}</div>
+      <button onClick={incrementButtonHandler}>increment</button>
+      <button onClick={decrementButtonHandler}>decrement</button>
     </div>
-  );
+  )
 }
 
 export default App;
