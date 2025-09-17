@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import { useState } from 'react';
+
+function App(props) {
+  const ContainerStyle = {
+
+  };
+  const [counter, setcounter] = useState(0);
+  const buttonhandler = () => {
+    setcounter(counter + 1)
+  };
+  const buttonhandler2 = () => {
+    setcounter(counter - 1)
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'
+      style={ContainerStyle}>
+      <p style={{ fontSize: "200px" }}>  {counter} </p>
+      <div>
+        <button style={{ fontSize: "50px" }} onClick={buttonhandler}> increment </button>
+      </div>
+      <div>
+        <button style={{ fontSize: "50px" }} onClick={buttonhandler2}> decrement </button>
+      </div>
     </div>
   );
 }
