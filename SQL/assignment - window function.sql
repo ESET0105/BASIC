@@ -24,7 +24,8 @@ insert into users values
 (102,'kanu@gamil','kanu'),(103,'heera@gmail','heera'),(104,'jetha@gmail','jetha'),(105,'iyar@gmail','iyar'),(106,'sodhi@gmail','sodhi');
 
 
-
+insert into users values 
+(107,'Oscar@gmail','Oscar')
 
 insert into book values 
 (20,'percy',350),
