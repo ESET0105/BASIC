@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ContainingType": "WebApplication01.Controllers.ValuesController",
+    "Method": "GetAllstudents",
+    "RelativePath": "api/Values",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
